@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Dice Game!</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1 id="title">Dice Game</h1>
+                <ul class="instructions">
+                    <li>Highest score of 20+ wins!</li>
+                    <li>Players get equal number of rolls.</li>
+                </ul>
+            <h2 id="message">Player 1 Turn</h2>
+
+            <div class="players">
+                <div id="player1">
+                    <h3>P1 Score:<br> 
+                        <span id="player1Scoreboard" class="score">0</span>
+                    </h3>
+                    <div id="player1Dice" class="dice active">-</div>
+                    <h3 class="wins">P1 Wins: 
+                        <span id="player1Winboard">0</span>
+                    </h3>
+                </div>
+                <div id="player2">
+                    <h3>P2 Score:<br>
+                        <span id="player2Scoreboard" class="score">0</span>
+                    </h3>
+                    <div id="player2Dice" class="dice">-</div>
+                    <h3 class="wins">P2 Wins: 
+                        <span id="player2Winboard">0</span>
+                    </h3>
+                </div>
+            </div>
+
+            <button id="rollBtn">Roll Dice 🎲</button>
+            <button id="resetBtn">Reset Game 🔁</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
